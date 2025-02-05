@@ -1,43 +1,140 @@
 # PhotoManager
 
-一个基于 SwiftUI 开发的照片管理应用，提供了简洁直观的照片浏览和管理功能。
+A modern photo management application built with SwiftUI, featuring an intuitive interface for browsing and managing photos. The app implements efficient memory management and optimized image loading systems, with plans to integrate AI-powered photo analysis capabilities.
 
-## 功能特点
+## Features
 
-- 按年月分组浏览照片
-- 支持照片和视频预览
-- 照片标记（删除/保留）功能
-- 批量删除功能
-- 优化的内存管理
-- 流畅的用户体验
+### Current Features
+- **Smart Photo Organization**
+  - Browse photos by year and month
+  - Smooth scrolling and navigation
+  - Efficient memory management for large photo libraries
+  - Quick preview and full-quality loading
 
-## 技术特点
+- **Media Support**
+  - Photo viewing with high-quality zoom
+  - Video playback support
+  - Thumbnail strip navigation
+  - Optimized media loading system
 
-- 使用 SwiftUI 构建现代化 UI
-- 采用 MVVM 架构
-- 使用 Core Data 进行数据持久化
-- 实现高效的图片加载和缓存系统
-- 优化的内存管理机制
+- **Photo Management**
+  - Mark photos for deletion or keeping
+  - Batch deletion support
+  - Persistent marking status
+  - Photo library integration
 
-## 系统要求
+- **Performance Optimizations**
+  - Progressive image loading (thumbnail → preview → full quality)
+  - Memory-efficient windowed loading
+  - Background preloading
+  - Responsive UI even with large libraries
 
+### Upcoming Features
+- **AI-Powered Photo Analysis** (In Development)
+  - Integration with FastViT for efficient image analysis
+  - Automatic photo categorization
+  - Object and scene recognition
+  - Face detection and grouping
+  - Smart album creation based on content
+  - Similar photo detection
+
+## Technical Details
+
+### Architecture
+- **MVVM Design Pattern**
+  - Clear separation of concerns
+  - Reactive UI updates using SwiftUI
+  - Testable business logic
+
+- **Core Components**
+  - PhotoManager: Central photo management system
+  - ImageLoadingSystem: Efficient image loading and caching
+  - CoreDataManager: Persistent storage management
+
+- **Performance Features**
+  - Windowed loading mechanism
+  - Memory warning handling
+  - Concurrent image loading
+  - Intelligent caching system
+
+### Technologies Used
+- SwiftUI for modern UI development
+- Core Data for persistent storage
+- Photos framework for system integration
+- AVKit for video playback
+- Upcoming: FastViT for AI analysis
+
+## Requirements
 - iOS 15.0+
 - Xcode 13.0+
 - Swift 5.5+
+- Future requirement: Python environment for FastViT integration
 
-## 安装说明
+## Installation
 
-1. 克隆项目到本地
-2. 使用 Xcode 打开项目
-3. 运行项目即可
+1. Clone the repository
+```bash
+git clone [repository-url]
+```
 
-## 使用说明
+2. Open the project in Xcode
+```bash
+cd PhotoManager
+open photosTest.xcodeproj
+```
 
-1. 首次运行时需要授予相册访问权限
-2. 主页按年月展示照片
-3. 点击照片可进入详情页
-4. 在详情页可以标记或删除照片
+3. Build and run the project
 
-## 许可证
+## Usage Guide
 
-MIT License 
+### Basic Usage
+1. Launch the app and grant photo library access
+2. Browse photos organized by year and month
+3. Tap any photo to enter detail view
+4. Swipe up/down to mark photos
+5. Use batch delete for efficient management
+
+### Upcoming AI Features
+1. Initial scan of photo library for analysis
+2. Automatic categorization of photos
+3. Smart album generation
+4. Similar photo grouping
+5. Content-based search capabilities
+
+## Development Roadmap
+
+### Phase 1 (Current)
+- ✅ Basic photo management
+- ✅ Efficient media loading
+- ✅ Memory optimization
+- ✅ UI/UX implementation
+
+### Phase 2 (In Progress)
+- 🔄 FastViT integration
+- 🔄 AI analysis implementation
+- 🔄 Smart categorization
+- 🔄 Enhanced search capabilities
+
+### Phase 3 (Planned)
+- 📅 Cloud sync support
+- 📅 Sharing capabilities
+- 📅 Advanced editing features
+- 📅 Cross-device sync
+
+## Contributing
+
+We welcome contributions! Please read our contributing guidelines before submitting pull requests.
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Acknowledgments
+
+- SwiftUI and Apple frameworks
+- FastViT team for the upcoming AI integration
+- All contributors and users
+
+## Contact
+
+For any queries or suggestions, please open an issue in the repository. 
